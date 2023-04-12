@@ -110,4 +110,14 @@ console.log("We're going to add the word AND between each item on the list. Like
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
-console.log("JavaScript can also combine arrays into a new array using the .concat() method. Taking that one step further, we can add words to the string using the .join method.\nLet's with our original array", ogFoodsArray)
+console.log("JavaScript can also combine arrays into a new array using the .concat() method. Let's try combining the list of food with the list of animals.")
+console.log("Here's our list of animals", animalArray) 
+console.log("Here's the list of foods ", ogFoodsArray)
+let chimeraArray = ogFoodsArray.concat(animalArray)
+console.log("Here they are combined,", chimeraArray)
+
+
+
+
+
+
