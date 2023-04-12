@@ -91,17 +91,23 @@ foodsArray[1] = 'Burrito';
 console.log(`Changed my second favorite food to ${foodsArray[1]}. The list is now`, foodsArray);
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+
+let ogFoodsArray = foodsArray.slice(0,foodsArray.length);
+
 console.log("JavaScript can help us manipulate arrays with the .sort() and .reverse() methods! Let's try it on my favorite foods list", foodsArray);
 let sortFoods = foodsArray.sort();
-console.log('Using the .sort() method rearanges the items in alphabetical order. Like so,', sortFoods)
+console.log('Using the .sort() method rearanges the items in alphabetical order. Like so,', sortFoods);
 let reverseFoods = foodsArray.reverse();
-console.log('Using the .reverse() method rearanges the items in alphabetical order. Like so,', reverseFoods)
+console.log('Using the .reverse() method rearanges the items in alphabetical order. Like so,', reverseFoods);
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+console.log("JavaScript can also convert arrays to strings using the .toString() method. Taking that one step further, we can add words to the string using the .join method.\nLet's with our original array", ogFoodsArray)
+console.log("We're going to add the word AND between each item on the list. Like so,", ogFoodsArray.join(" and ") )
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+console.log("JavaScript can also combine arrays into a new array using the .concat() method. Taking that one step further, we can add words to the string using the .join method.\nLet's with our original array", ogFoodsArray)
