@@ -38,8 +38,8 @@ console.log('The last animal on the list is', animalArray[3])
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
-console.log('Another way to find the last animal is to use the length of the array minus 1. Like so,', animalArray[animalArray.length - 1])
-console.log('Another way to find the last animal is to use the .indexOf() the animal. Like so,', animalArray[animalArray.indexOf('dog')])
+console.log('Another way to find the last animal is to use the length of the array minus 1. Like so,', animalArray[animalArray.length - 1]);
+console.log('Another way to find the last animal is to use the .indexOf() the animal. Like so,', animalArray[animalArray.indexOf('dog')]);
 
 
 // 4. Adding & Removing Array Items
@@ -50,8 +50,8 @@ animalArray.push('penguin');
 console.log('Added an animal to end,', animalArray);
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
-foodsArray.push('Sambusa')
-console.log('Added Sambusa to my list of favorite foods', foodsArray)
+foodsArray.push('Sambusa');
+console.log('Added Sambusa to my list of favorite foods', foodsArray);
 
 // Example: Remove the last animal by using Array.pop
 let removedAnimal = animalArray.pop();
@@ -102,19 +102,19 @@ console.log('Using the .reverse() method rearanges the items in alphabetical ord
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-console.log("JavaScript can also convert arrays to strings using the .toString() method. Taking that one step further, we can add words to the string using the .join method.\nLet's with our original array", ogFoodsArray)
-console.log("We're going to add the word AND between each item on the list. Like so,", ogFoodsArray.join(" and ") )
+console.log("JavaScript can also convert arrays to strings using the .toString() method. Taking that one step further, we can add words to the string using the .join method.\nLet's with our original array", ogFoodsArray);
+console.log("We're going to add the word AND between each item on the list. Like so,", ogFoodsArray.join(" and ") );
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
-console.log("JavaScript can also combine arrays into a new array using the .concat() method. Let's try combining the list of food with the list of animals.")
-console.log("Here's our list of animals", animalArray) 
-console.log("Here's the list of foods ", ogFoodsArray)
-let chimeraArray = ogFoodsArray.concat(animalArray)
-console.log("Here they are combined,", chimeraArray)
+console.log("JavaScript can also combine arrays into a new array using the .concat() method. Let's try combining the list of food with the list of animals.");
+console.log("Here's our list of animals", animalArray);
+console.log("Here's the list of foods ", ogFoodsArray);
+let chimeraArray = ogFoodsArray.concat(animalArray);
+console.log("Here they are combined,", chimeraArray);
 
 
 
