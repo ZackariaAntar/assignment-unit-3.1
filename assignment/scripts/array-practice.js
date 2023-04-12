@@ -39,6 +39,7 @@ console.log('The last animal on the list is', animalArray[3])
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
 console.log('Another way to find the last animal is to use the length of the array minus 1. Like so,', animalArray[animalArray.length - 1])
+console.log('Another way to find the last animal is to use the .indexOf() the animal. Like so,', animalArray[animalArray.indexOf('dog')])
 
 
 // 4. Adding & Removing Array Items
@@ -86,11 +87,15 @@ console.log('The items are now', foodsArray);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
-foodsArray[1] = 'Burrito'
-console.log(`Changed my second favorite food to ${foodsArray[1]}. The list is now`, foodsArray)
+foodsArray[1] = 'Burrito';
+console.log(`Changed my second favorite food to ${foodsArray[1]}. The list is now`, foodsArray);
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-
+console.log("JavaScript can help us manipulate arrays with the .sort() and .reverse() methods! Let's try it on my favorite foods list", foodsArray);
+let sortFoods = foodsArray.sort();
+console.log('Using the .sort() method rearanges the items in alphabetical order. Like so,', sortFoods)
+let reverseFoods = foodsArray.reverse();
+console.log('Using the .reverse() method rearanges the items in alphabetical order. Like so,', reverseFoods)
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
